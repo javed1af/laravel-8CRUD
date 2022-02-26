@@ -35,10 +35,16 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::post('/login', 'LoginController@login')->name('login.perform');
 
     });
+
     Route::group(['middleware' => ['auth']], function() {
         /**
          * Logout Routes
          */
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
+
+    /**
+     * Product Routes
+     */
+    Route::resource('products', ProductController::class);
 });

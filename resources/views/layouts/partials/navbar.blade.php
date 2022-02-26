@@ -8,6 +8,7 @@
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li><a href="{{ route('home.index') }}" class="nav-link px-2 text-secondary">Home</a></li>
         {{-- <li><a href="{{ route('task.index') }}" class="nav-link px-2 text-secondary">Tasks</a></li> --}}
+        <li><a href="{{ route('products.index') }}" class="nav-link px-2 text-secondary">Products</a></li>
       </ul>
 
       @auth
